@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backtracking</title>
+  </head>
+  <body>
+    <script>
+      let someNumber;
+      let backtrack = (curr, OTHER_ARGUMENTS) => {
+        if (BASE_CASE) {
+          // modify the answer
+          return;
+        }
+
+        let ans = 0;
+        // ITERATE_OVER_INPUT
+        for (i = 0; i < someNumber; i++) {
+          // modify the current state
+          ans += backtrack(curr, OTHER_ARGUMENTS);
+          // undo the modification of the current state
+        }
+
+        return ans;
+      };
+    </script>
+  </body>
+</html>

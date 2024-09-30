@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reversing a linked list</title>
+  </head>
+  <body>
+    <script>
+      let fn = (head) => {
+        let curr = head;
+        let prev = null;
+        while (curr) {
+          let nextNode = curr.next;
+          curr.next = prev;
+          prev = curr;
+          curr = nextNode;
+        }
+
+        return prev;
+      };
+    </script>
+  </body>
+</html>

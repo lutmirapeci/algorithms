@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Efficient string building</title>
+  </head>
+  <body>
+    <!-- In JavaScript, benchmarking shows that concatenation with += 
+     is faster than using .join(). -->
+    <script>
+      // arr is a list of characters
+      let fn = (arr) => {
+        let ans = [];
+        for (const c of arr) {
+          ans.push(c);
+        }
+
+        return ans.join("");
+      };
+
+      // let fn = (arr) => {
+      //   let ans = "";
+      //   for (const c of arr) {
+      //     ans += c;
+      //   }
+
+      //   return ans;
+      // };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary tree: DFS (recursive)</title>
+  </head>
+  <body>
+    <script>
+      let dfs = (root) => {
+        if (!root) {
+          return;
+        }
+
+        let ans = 0;
+
+        // do logic
+        dfs(root.left);
+        dfs(root.right);
+        return ans;
+      };
+    </script>
+  </body>
+</html>
